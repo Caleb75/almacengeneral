@@ -1,3 +1,4 @@
+
 <?php
 	
 	require "conexion.php";
@@ -25,6 +26,8 @@
 				$_SESSION['id'] = $row['id'];
 				$_SESSION['nombre'] = $row['nombre'];
 				$_SESSION['rol_id'] = $row['rol_id'];
+				$query = "INSERT INTO login_logout('fk_usuario','fecha_log') VALUES ('".$_SESSION["id"] ."', current_timestamp())";
+				$res=mysqli_query($cn,$query);
 				
 				header("Location:index.php");
 				

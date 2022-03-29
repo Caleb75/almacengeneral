@@ -120,7 +120,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="nav-link px-3">
+              <a href="inventario.php" class="nav-link px-3">
                 <span class="me-2"><i class="bi bi-card-checklist"></i></span>
                 <span>Inventario</span>
               </a>
@@ -187,6 +187,7 @@
         <h5 class="card-title">Control de Inventario </h5>
         <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#controlIn" data-bs-whatever="@fat">Registro</a>
         <a class="btn btn-success" href="control_inveR.php" role="button">Registros</a>
+        <a class="btn btn-dark" href="" data-bs-toggle="modal" data-bs-target="#inventarioN" data-bs-whatever="@fat">Num. de inventarios</a>
       </div>
     </div>
   </div>
@@ -232,7 +233,7 @@
 
 
 <div class="modal fade" id="entradaAl" tabindex="-1" aria-labelledby="entradaAl" aria-hidden="true">
-  <div class="modal-dialog modal-lg ">
+  <div class="modal-dialog modal-xl ">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="entradaAl">Nueva entrada</h5>
@@ -323,7 +324,7 @@
 
 
  <div class="modal fade" id="solicitud" tabindex="-1" aria-labelledby="labelsoli" aria-hidden="true">
-  <div class="modal-dialog modal-lg ">
+  <div class="modal-dialog modal-xl ">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="labelsoli">Solicitud de Inspeccion</h5>
@@ -416,7 +417,7 @@
       
 
       <div class="modal fade" id="expedicionT" tabindex="-1" aria-labelledby="labelexp" aria-hidden="true">
-  <div class="modal-dialog modal-lg ">
+  <div class="modal-dialog modal-xl ">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="labelexp">Tarja de Expedicion</h5>
@@ -518,7 +519,7 @@
       </div>
       
       <div class="modal fade" id="controlIn" tabindex="-1" aria-labelledby="Control" aria-hidden="true">
-  <div class="modal-dialog modal-lg ">
+  <div class="modal-dialog modal-xl ">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="Control">Control de inventario</h5>
@@ -536,12 +537,6 @@
                 <option value="3">2</option>
                 <option value="4">3</option>
               </select>
-            </div>
-
-
-          <div class="col-4">
-              <label for="recipient-name" class="col-form-label">Fecha de Emision:</label>
-              <input type="date" class="form-control" id="recipient-name" name="fecha">
             </div>
             <div class="col-4">
               <label for="recipient-name" class="col-form-label">Numero de Revision:</label>
@@ -597,6 +592,38 @@
   </div>
   </div>
   </div>
+
+  <div class="modal fade" id="inventarioN" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Agregar # de inventario</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <form action="Ninventario.php" method="POST">
+      <div class="row">
+      <div class="col">
+              <label for="recipient-name" class="col-form-label">Numero de Revision:</label>
+              <input type="text" class="form-control" id="recipient-name" name="numeroR">
+            </div>
+            <br>
+      <div class="col">
+              <label for="recipient-name" class="col-form-label">Fecha de Emision:</label>
+              <input type="date" class="form-control" id="recipient-name" name="fecha">
+            </div>
+            <br>
+         
+     
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
       
 
     </div>

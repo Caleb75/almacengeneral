@@ -101,7 +101,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="nav-link px-3">
+              <a href="inventario.php" class="nav-link px-3">
                 <span class="me-2"><i class="bi bi-card-checklist"></i></span>
                 <span>Inventario</span>
               </a>
