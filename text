@@ -1,0 +1,70 @@
+<div class="">
+    <h2>Usuarios</h2>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Agregar</button>
+    <hr>    
+</div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nuevo usuario</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+        <label for="recipient-name" class="col-form-label">*Todos los campos deben ser rellenados*</label>
+        <div class="row gy-5">
+            <div class="col-6">
+            <label for="recipient-name" class="col-form-label">Identificador:</label>
+            <input type="text" class="form-control" id="recipient-name" name="identificador">
+          </div>
+          <div class="col-6">
+            <label for="recipient-name" class="col-form-label">Nombres:</label>
+            <input type="text" class="form-control" id="recipient-name" name="nombre">
+          </div>
+          <div class="col-6">
+            <label for="recipient-name" class="col-form-label">Apellidos:</label>
+            <input type="text" class="form-control" id="recipient-name" name="apellidos">
+          </div>
+          <div class="col-6">
+            <label for="recipient-name" class="col-form-label">Telefono:</label>
+            <input type="text" class="form-control" id="recipient-name" name="telefono">
+          </div>
+          <div class="col-6">
+            <label for="recipient-name" class="col-form-label">Correo electronico:</label>
+            <input type="text" class="form-control" id="recipient-name" name="email_user">
+          </div>
+          <div class="col-6">
+            <label for="recipient-name" class="col-form-label">Contraseña:</label>
+            <input type="text" class="form-control" id="recipient-name" name="contraseña">
+            <div class="col-auto">
+             <span id="passwordHelpInline" class="form-text">
+                 Al menos conteneder de 8 a 10 caracteres.
+                </span>
+            </div>
+          </div>
+          <div class="col-6">
+            <label for="recipient-name" class="col-form-label">Tipo de usuario:</label>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="rol_id">
+            <option selected value="2">Alumno</option>
+            <option value="3">Docente</option>
+            <option value="4">Cliente</option>
+            </select>
+          </div>
+          <div class="col-6">
+            <label for="recipient-name" class="col-form-label">Estatus:</label>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="status">
+            <option selected value="1">Activo</option>
+            <option value="2">Inactivo</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-success">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
